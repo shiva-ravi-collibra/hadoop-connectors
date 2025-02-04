@@ -41,6 +41,7 @@ from the main directory:
 ./mvnw -P hadoop2 clean package
 
 # with Hadoop 3 and YARN support:
+mvn install:install-file -Dfile=jackson-core-2.15.2.jar -DgroupId=com.fasterxml.jackson.core -DartifactId=jackson-core -Dversion=2.15.2 -Dpackaging=jar -DgeneratePom=true
 ./mvnw -P hadoop3 clean package
 ```
 
